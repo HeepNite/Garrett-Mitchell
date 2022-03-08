@@ -1,0 +1,24 @@
+.app-container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    z-index: 0;
+    .app-bacground {
+        position: relative;
+        background-color: $Base-color-backgrond;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../../Assets/Img/line-maker.svg");
+            z-index: 0;
+        }
+        section {
+            z-index: 1;
+            color: $Base-color-text;
+        }
+    }
+}

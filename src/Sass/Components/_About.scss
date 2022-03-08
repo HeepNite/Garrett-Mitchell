@@ -1,0 +1,130 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 0.18fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr 1fr;
+    position: relative;
+    margin-bottom: 7rem;
+    width: 100%;
+
+    .about-title-container,
+    .about-image {
+        grid-column-start: 2;
+    }
+    .about-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        align-self: center;
+        width: 100%;
+        height: 100%;
+        font-family: Saira;
+        font-size: 1.3rem;
+        font-weight: 400;
+        letter-spacing: 0.5rem;
+        color: #fff;
+        .divider-smv {
+            align-self: flex-start;
+        }
+    }
+    .about-image {
+        grid-row-start: 2;
+        grid-row-end: 4;
+        .about-img-container {
+            width: 32rem;
+            height: 35rem;
+            border: solid 1px $base-color-detail;
+            padding: 1rem;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0rem -1.5rem;
+            }
+        }
+    }
+    .about-content {
+        grid-column-start: 3;
+        grid-row-start: 2;
+        grid-row-end: 4;
+        align-self: center;
+        h2 {
+            font-family: Saira;
+            font-size: 1.5rem;
+            font-weight: 900;
+            letter-spacing: 0.5rem;
+            color: #fff;
+            width: 80%;
+            margin-bottom: 1rem;
+        }
+        p {
+            font-family: Saira;
+            font-size: 0.9rem;
+            font-weight: 400;
+            letter-spacing: 0.2rem;
+            line-height: 1.5rem;
+            color: #fff;
+            width: 80%;
+            margin-bottom: 3rem;
+        }
+        .about-chart-container {
+            display: flex;
+            h5 {
+                font-family: Saira;
+                font-weight: 900;
+                letter-spacing: 0.5rem;
+                color: #fff;
+                margin-bottom: 0.5rem;
+            }
+            .about-chart-title {
+                width: 80%;
+            }
+            .about-chart-porcent {
+                align-self: flex-end;
+            }
+        }
+        .about-bar-chart-container {
+            background-color: $Base-color-backgrond;
+            border: solid 1px $base-color-detail;
+            width: 87%;
+            height: 0.3rem;
+            margin-bottom: 1rem;
+
+            div {
+                height: 0.3rem;
+                margin-bottom: 1rem;
+                background: $base-color-detail;
+            }
+            .about-bar-chart-1 {
+                width: 80%;
+            }
+            .about-bar-chart-2 {
+                width: 70%;
+            }
+            .about-bar-chart-3 {
+                width: 90%;
+            }
+        }
+        .about-buy-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 87%;
+            height: 3rem;
+            background-color: $base-color-detail;
+            border: solid 1px $base-color-detail;
+            color: $Base-color-backgrond;
+            font-family: Saira;
+            font-size: 1rem;
+            font-weight: bold;
+            letter-spacing: 0.3rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: transparent;
+                color: $base-color-detail;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.loading-container {
+    background-color: $base-color-detail;
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    .loading-inner-container {
+        background-color: $Base-color-backgrond;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        position: relative;
+        z-index: 1;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../../Assets/Img/line-maker.svg");
+            z-index: -1;
+        }
+        article {
+            position: absolute;
+            overflow: hidden;
+
+            h1 {
+                color: $base-color-detail;
+                font-family: cursive;
+                font-size: 600px;
+                font-weight: 900;
+                text-transform: uppercase;
+                opacity: 0.2;
+            }
+
+            button {
+                padding: 2rem;
+                background-color: transparent;
+                border: 3px solid $Base-color-text;
+                color: $Base-color-text;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                overflow: hidden;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 5.5rem;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $base-color-detail;
+                    transition: all 0.3s ease-in-out;
+                    z-index: -1;
+                }
+                span {
+                    font-family: "Nunito";
+                    text-transform: uppercase;
+                    z-index: 1;
+                }
+                &:hover {
+                    color: $Base-color-backgrond;
+                    border-color: transparent;
+                    &::before {
+                        top: 0;
+                    }
+                }
+            }
+        }
+    }
+}

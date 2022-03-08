@@ -1,0 +1,109 @@
+.contact-container {
+    display: grid;
+    width: 100%;
+    position: relative;
+    grid-template-columns: 0.18fr 1fr 1fr;
+    grid-template-rows: 0.7fr 1fr 0.5fr;
+    article {
+        grid-column-start: 2;
+    }
+    .contact-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            margin-top: 1.3rem;
+        }
+        .divider-smv {
+            align-self: flex-start;
+        }
+    }
+    .contact-form {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        form {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            input {
+                outline: none;
+                text-align: center;
+                width: 27%;
+                margin-bottom: 1rem;
+                background-color: transparent;
+                border: 1px solid $base-color-detail;
+                color: $Base-color-text;
+                padding: 0.5rem;
+                font-family: Saira;
+                font-size: 0.9rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+                line-height: 1.5rem;
+                &::placeholder {
+                    color: $base-color-detail;
+                }
+            }
+            textarea {
+                outline: none;
+                width: 100%;
+                background-color: transparent;
+                border: 1px solid $base-color-detail;
+                margin: 1rem 0rem;
+                font-family: Saira;
+                font-size: 0.9rem;
+                font-weight: 400;
+                letter-spacing: 0.2rem;
+                line-height: 1.5rem;
+                &::placeholder {
+                    color: $base-color-detail;
+                }
+            }
+            button{
+                background-color: $base-color-detail;
+                color:$Base-color-backgrond;
+                border: none;
+                padding: 0.5rem;
+                font-family: Saira;
+                font-size: 1rem;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+                line-height: 1.5rem;
+                width: 100%;
+                align-self: center;
+                cursor: pointer;
+            }
+        }
+    }
+    .contact-content-container {
+        grid-column-start: 3;
+        display: flex;
+        justify-content: flex-end;
+        width: 87%;
+        .contact-content {
+            width: 76%;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid $base-color-detail;
+            h3 {
+                font-size: 1.3rem;
+                font-weight: 900;
+                letter-spacing: 0.5rem;
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+                margin: 1rem 0rem;
+            }
+            h6 {
+                font-family: Saira;
+                font-size: 0.8rem;
+                font-weight: bold;
+                letter-spacing: 0.2rem;
+                line-height: 1.5rem;
+            }
+        }
+    }
+}

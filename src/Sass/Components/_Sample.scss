@@ -1,0 +1,79 @@
+.sample-container {
+    width: 100%;
+    display: grid;
+    position: relative;
+    grid-template-columns: 0.18fr 1fr 1fr;
+    grid-template-rows: 0.6fr 1fr;
+    article {
+        grid-column-start: 2;
+    }
+    .sample-title-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            margin-top: 1.3rem;
+        }
+        .divider-smv {
+            align-self: flex-start;
+        }
+    }
+    .sample-content {
+        grid-column-end: 4;
+
+        ul {
+            display: flex;
+            list-style: none;
+            margin: 0%;
+            padding: 0;
+            width: 95%;
+            li {
+                display: flex;
+                flex-direction: column;
+                border: 1px solid $base-color-detail;
+                background-color: $Base-color-backgrond;
+                padding: 1rem 1rem;
+                margin-right: 1rem;
+                gap: 1rem;
+                h3 {
+                    font-family: Saira;
+                    font-size: 1.3rem;
+                    font-weight: 900;
+                    letter-spacing: 0.5rem;
+                    font-weight: 600;
+                }
+                p {
+                    font-family: Saira;
+                    font-size: 0.9rem;
+                    font-weight: 400;
+                    letter-spacing: 0.2rem;
+                    line-height: 1.5rem;
+                }
+                button {
+                    background-color: $base-color-detail;
+                    border: solid 1px $base-color-detail;
+                    color: $Base-color-backgrond;
+                    font-family: Saira;
+                    padding: 0.5rem 1rem;
+                    cursor: pointer;
+                    transition: all 0.3s ease-in-out;
+                    &:hover {
+                        background-color: transparent;
+                        color: $base-color-detail;
+                    }
+                }
+                .sample-read-btn {
+                    width: 50%;
+                    font-size: 0.8rem;
+                    font-weight: bold;
+                    letter-spacing: 0.3rem;
+                }
+                .sample-buy-btn {
+                    font-size: 1rem;
+                    font-weight: bold;
+                    letter-spacing: 0.4rem;
+                }
+            }
+        }
+    }
+}
