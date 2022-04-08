@@ -76,13 +76,14 @@
         align-self: center;
         justify-self: center;
         position: relative;
+       
         .hero-mouse-line {
             width: 0.1rem;
-            height: 7.1rem;
+            height: 6.48rem;
             background-color: $base-color-detail;
             position: absolute;
             top: 0;
-            left: 0.66rem;
+            left: 0.88rem;
         }
         .hero-mouse-icon {
             border-radius: 100px;
@@ -93,6 +94,7 @@
             background-size: 100% 200%;
             position: absolute;
             top: 0.9rem;
+            left: 0.19rem;
             animation: colorSlide 5s infinite linear, nudgeMouse 5s ease-in-out infinite;
             &:after,
             &:before {

@@ -2,7 +2,7 @@
 import garrett from "../../Assets/Img/garrett2.jpeg";
 const About = () => {
     return (
-        <section className="about-container">
+        <section id="About" className="about-container">
             <article className="about-title-container">
                 <div className="about-title">
                     <h2>About Me</h2>

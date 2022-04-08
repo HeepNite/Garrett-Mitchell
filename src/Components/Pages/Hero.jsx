@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <section className="hero-container">
+        <section id="Hero" className="hero-container">
 
             <div className="hero-content">
                 <article className="hero-subtitle">

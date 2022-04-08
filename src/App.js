@@ -1,4 +1,5 @@
 import Cursor from "./Components/Generals/Cursor";
+import Header from "./Components/Generals/Header/Header";
 import Loading from "./Components/Generals/Loading";
 import SocialMedia from "./Components/Generals/SocialMedia";
 import About from "./Components/Pages/About";
@@ -9,8 +10,9 @@ import Sample from "./Components/Pages/Sample";
 function App() {
   return (
     <main >
-      {/* <Loading /> */}
+      <Loading />
       <div className="app-container">
+        <Header />
         <SocialMedia />
         <Hero />
         <div className="app-bacground">

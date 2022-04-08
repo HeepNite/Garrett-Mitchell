@@ -4,7 +4,7 @@ import ReviewThree from "../../Assets/Img/review-3.jpeg";
 import ReviewFour from "../../Assets/Img/review-4.jpeg";
 const Reviews = () => {
     return (
-        <section className="reviews-container">
+        <section id='Review' className="reviews-container">
             <article className="reviews-title-container">
                 <div className="reviews-title">
                     <h2>Reviews</h2>
