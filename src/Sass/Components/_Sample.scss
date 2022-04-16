@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        h2{
+        h2 {
             margin-top: 1.3rem;
         }
         .divider-smv {
@@ -72,6 +72,35 @@
                     font-size: 1rem;
                     font-weight: bold;
                     letter-spacing: 0.4rem;
+                }
+            }
+        }
+    }
+}
+@media screen and(max-Width: 768px ) {
+    .sample-container {
+        grid-template-columns: 0.58fr 1fr 1fr;
+        grid-template-rows: 6rem 145rem;
+        .sample-title-container {
+            .sample-title {
+                h2 {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .sample-content {
+            ul {
+                flex-direction: column;
+                gap: 1rem;
+                li {
+                    h3 {
+                        font-size: 1.1rem;
+                        letter-spacing: 0.3rem;
+                    }
+                    .sample-read-btn{
+                        width: 73%;
+                        letter-spacing: 0.2rem;  
+                    }
                 }
             }
         }

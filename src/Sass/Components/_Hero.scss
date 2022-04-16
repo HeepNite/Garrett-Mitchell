@@ -166,3 +166,40 @@
         }
     }
 }
+@media screen and(max-width: 768px) {
+    .hero-container {
+        height: auto;
+        grid-template-columns: 0.58fr 1fr 1fr;
+        grid-template-rows: 21rem 9rem;
+        background-size: cover;
+        background-position: 4rem 0rem;
+        .hero-subtitle {
+            h3 {
+                font-size: 1rem;
+            }
+        }
+        .hero-title {
+            h1 {
+                font-size: 4.3rem;
+            }
+        }
+        .hero-description {
+            display: none;
+        }
+        .hero-mouse {
+            .hero-mouse-line {
+                height: 4.48rem;
+            }
+            .hero-mouse-icon {
+                height: 34px;
+                width: 20px;
+                top: 0.4rem;
+                left: 0.4rem;
+                &::after {
+                    width: 8px;
+                    height: 8px;
+                }
+            }
+        }
+    }
+}

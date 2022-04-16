@@ -108,3 +108,33 @@
         }
     }
 }
+@media screen and(max-width: 768px) {
+    .contact-container{
+        grid-template-columns: 0.58fr 1fr 1fr;
+        grid-template-rows: 9rem 40rem;
+        z-index: 9999;
+        .contact-title-container{
+            grid-column: 2/4;
+        }
+        .contact-content-container{
+            display: none;
+        }
+        .contact-form{
+            grid-column: 2/4;
+            align-items: flex-start;
+            padding:  0rem 1rem 0rem 0rem;
+            form{
+                input{
+                    width: 40%;
+                }
+                input[type="phone"]{
+                    width: 100%;
+                }
+               textarea{
+                   margin-top: 0rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

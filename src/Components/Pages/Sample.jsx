@@ -8,6 +8,7 @@ const Sample = () => {
                 </div>
                 <div className="divider-smv"></div>
             </article>
+            {/* crear slider */}
             <article className="sample-content">
                 <ul>
                     <li>

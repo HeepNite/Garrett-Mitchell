@@ -28,7 +28,7 @@ const Loading = () => {
 
     /* functions */
     const handleLoad = (e) => {
-        e.preventDefault();
+    e.preventDefault();
         gsap.to(loadingChild('.loading-content'), {
             duration: 0.7,
             opacity: 0,
